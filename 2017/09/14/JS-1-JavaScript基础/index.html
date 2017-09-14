@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>JS-1.JavaScript基础 | MyBlog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="Ying,Ying's Blog" />
+  
+  <meta name="description" content="一，什么是JavaScript以及组成1.概念JavaScript是一种基于对象和事件的弱类型（松散类型）语言，是一种解释性语言，js运行在用户端1995年发布，最初适用于验证表单，开发者是布兰登艾奇 2.JavaScript的组成 a.ECMAscript 语法核心（关键字，保留字，流程控制，变量…）b.DOM 文档对象模型（Document Object Model）c.BOM 浏览器对象模型">
+<meta name="keywords" content="javascript,前端">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS-1.JavaScript基础">
+<meta property="og:url" content="http://yinggirl93.github.io/2017/09/14/JS-1-JavaScript基础/index.html">
+<meta property="og:site_name" content="MyBlog">
+<meta property="og:description" content="一，什么是JavaScript以及组成1.概念JavaScript是一种基于对象和事件的弱类型（松散类型）语言，是一种解释性语言，js运行在用户端1995年发布，最初适用于验证表单，开发者是布兰登艾奇 2.JavaScript的组成 a.ECMAscript 语法核心（关键字，保留字，流程控制，变量…）b.DOM 文档对象模型（Document Object Model）c.BOM 浏览器对象模型">
+<meta property="og:image" content="http://yinggirl93.github.io/2017/09/14/JS-1-JavaScript基础/算数运算符.png">
+<meta property="og:image" content="http://yinggirl93.github.io/2017/09/14/JS-1-JavaScript基础/赋值运算符.png">
+<meta property="og:image" content="http://yinggirl93.github.io/2017/09/14/JS-1-JavaScript基础/比较运算符.png">
+<meta property="og:image" content="http://yinggirl93.github.io/2017/09/14/JS-1-JavaScript基础/逻辑运算符.png">
+<meta property="og:updated_time" content="2017-09-14T08:37:25.926Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JS-1.JavaScript基础">
+<meta name="twitter:description" content="一，什么是JavaScript以及组成1.概念JavaScript是一种基于对象和事件的弱类型（松散类型）语言，是一种解释性语言，js运行在用户端1995年发布，最初适用于验证表单，开发者是布兰登艾奇 2.JavaScript的组成 a.ECMAscript 语法核心（关键字，保留字，流程控制，变量…）b.DOM 文档对象模型（Document Object Model）c.BOM 浏览器对象模型">
+<meta name="twitter:image" content="http://yinggirl93.github.io/2017/09/14/JS-1-JavaScript基础/算数运算符.png">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/pace.min.js"></script>
+  
+
+  
+  
+
+</head>
+
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title">Ying&#39;s Blog</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a  href="/">
+                        <i class="fa fa-home"></i>
+                        <span>首页</span>
+                    </a>
+                    
+                    <a  href="/archives">
+                        <i class="fa fa-archive"></i>
+                        <span>Archives</span>
+                    </a>
+                    
+                    <a  href="/about">
+                        <i class="fa fa-user"></i>
+                        <span>About</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        Ying&#39;s Blog
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        一个专注 WEB 开发的技术博客
+                    </h3>
+                    
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="Ying" target="_blank" href="//yinggirl93.github.io">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" href="//github.com/wongminho">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a title="Weibo" target="_blank" href="//weibo.com/WongMinHo">
+                            <i class="fa fa-weibo fa-2x"></i></a>
+                    
+                        <a title="Twitter" target="_blank" href="//twitter.com/huangminhow">
+                            <i class="fa fa-twitter fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-JS-1-JavaScript基础" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="post-title" itemprop="name">
+      JS-1.JavaScript基础
+    </h1>
+    <div class="post-title-bar">
+      <ul>
+          
+              <li>
+                  <i class="fa fa-book"></i>
+                  
+                      <a href="/categories/JavaScript/">JavaScript</a>
+                  
+              </li>
+          
+        <li>
+          <i class="fa fa-calendar"></i>  2017-09-14
+        </li>
+        <li>
+          <i class="fa fa-eye"></i>
+          <span id="busuanzi_value_page_pv"></span>
+        </li>
+      </ul>
+    </div>
+  
+
+          
+      </header>
+    
+    <div class="article-entry post-content" itemprop="articleBody">
+      
+            
+            <h4 id="一，什么是JavaScript以及组成"><a href="#一，什么是JavaScript以及组成" class="headerlink" title="一，什么是JavaScript以及组成"></a>一，什么是JavaScript以及组成</h4><h5 id="1-概念"><a href="#1-概念" class="headerlink" title="1.概念"></a>1.概念</h5><p>JavaScript是一种<strong>基于对象和事件</strong>的<strong>弱类型</strong>（松散类型）语言，是一种<strong>解释性语言</strong>，js运行在用户端<br>1995年发布，最初适用于验证表单，开发者是布兰登艾奇</p>
+<h5 id="2-JavaScript的组成"><a href="#2-JavaScript的组成" class="headerlink" title="2.JavaScript的组成"></a>2.JavaScript的组成</h5><blockquote>
+<p>a.ECMAscript 语法核心（关键字，保留字，流程控制，变量…）<br>b.DOM 文档对象模型（Document Object Model）<br>c.BOM 浏览器对象模型（Browser Object Model）</p>
+</blockquote>
+<h4 id="二，JavaScript的引入方式"><a href="#二，JavaScript的引入方式" class="headerlink" title="二，JavaScript的引入方式"></a>二，JavaScript的引入方式</h4><h5 id="1，行内式：直接将js代码写在标签内部"><a href="#1，行内式：直接将js代码写在标签内部" class="headerlink" title="1，行内式：直接将js代码写在标签内部"></a>1，行内式：直接将js代码写在标签内部</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;div onclick=&quot;alert(1)&quot;&gt;&lt;/div&gt;&lt;!--onclick（点击事件） alert（警示框）--&gt;</div></pre></td></tr></table></figure>
+<h5 id="2-内部式：使用script标签，直接写在HTML文档中"><a href="#2-内部式：使用script标签，直接写在HTML文档中" class="headerlink" title="2,内部式：使用script标签，直接写在HTML文档中"></a>2,内部式：使用script标签，直接写在HTML文档中</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">        alert(2);</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+<h5 id="3，外部式：外部引入一个js文件"><a href="#3，外部式：外部引入一个js文件" class="headerlink" title="3，外部式：外部引入一个js文件"></a>3，外部式：外部引入一个js文件</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=&quot;../js/day01.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt; &lt;/script&gt;</div></pre></td></tr></table></figure>
+<p>（1）.JS 引入的时候一般放在HTML 所有内容之后<br>（2）外部式元素内写代码块不会生效</p>
+<h4 id="三，JavaScript的输出方式"><a href="#三，JavaScript的输出方式" class="headerlink" title="三，JavaScript的输出方式"></a>三，JavaScript的输出方式</h4><p><strong>每个能独立完成一个功能的代码以分号结束 这就是一个代码块</strong></p>
+<h5 id="1，document-write-；"><a href="#1，document-write-；" class="headerlink" title="1，document.write()；"></a>1，document.write()；</h5><p>向文档中输入内容，不会覆盖原文档的内容，可以识别标签<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">document.write(&quot;&lt;div&gt;哈哈哈&lt;/div&gt;&quot;);</div></pre></td></tr></table></figure></p>
+<h5 id="2，console（控制台输出）-可以直接在浏览器的控制台输入代码"><a href="#2，console（控制台输出）-可以直接在浏览器的控制台输入代码" class="headerlink" title="2，console（控制台输出）(可以直接在浏览器的控制台输入代码)"></a>2，console（控制台输出）(可以直接在浏览器的控制台输入代码)</h5><p>a，<code>console.log();</code>一般用于调试代码<br>b，<code>console.dir();</code>打印目录<br>c，<code>console.clear();</code>清除<br>d，<code>console.error();</code>抛出一个异常</p>
+<h5 id="3，alert-弹出一个带有一条指定信息的消息（警示框）"><a href="#3，alert-弹出一个带有一条指定信息的消息（警示框）" class="headerlink" title="3，alert();弹出一个带有一条指定信息的消息（警示框）"></a>3，alert();弹出一个带有一条指定信息的消息（警示框）</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">alert(2);</div></pre></td></tr></table></figure>
+<h5 id="4，innerHTML-innerText-获取或者向指定元素内添加内容-innerHTML是可以识别标签"><a href="#4，innerHTML-innerText-获取或者向指定元素内添加内容-innerHTML是可以识别标签" class="headerlink" title="4，innerHTML/innerText 获取或者向指定元素内添加内容 (innerHTML是可以识别标签)"></a>4，innerHTML/innerText 获取或者向指定元素内添加内容 (innerHTML是可以识别标签)</h5><p>使用这两个元方法的是需要元素的，如果两个方法一起用的话 后面的会覆盖前面的<br>会将元素原有的内容覆盖。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">box2.innerHTML = &quot;&lt;b&gt;hahaha&lt;/b&gt;&quot;;</div><div class="line">box2.innerText = &quot;hahaha&quot;;</div></pre></td></tr></table></figure></p>
+<h4 id="四，JavaScript的命名规则"><a href="#四，JavaScript的命名规则" class="headerlink" title="四，JavaScript的命名规则"></a>四，JavaScript的命名规则</h4><p>1.严格区分大小写<br>2.命名时名称可以出现字母、数字、下划线、$ ,但是不能数字开头，也不能纯数字<br>3.不能包含关键字和保留字。<br>关键字：var number<br>除了关键字 top name 也尽量不使用。<br>4.推荐驼峰命名法：有多个有意义的单词组成名称的时候，第一个单词的首字母小写，其余的单词首字母写<br>5.匈牙利命名：就是根据数据类型单词的的首字符作为前缀<br>aLi 多个 array<br>oUl 单个 object</p>
+<h4 id="五，变量"><a href="#五，变量" class="headerlink" title="五，变量"></a>五，变量</h4><p>变量：可以看成一个存储数据的容器，用关键字var来声明</p>
+<h4 id="六，JavaScript的五种基础数据类型"><a href="#六，JavaScript的五种基础数据类型" class="headerlink" title="六，JavaScript的五种基础数据类型"></a>六，JavaScript的五种基础数据类型</h4><p>两种引用数据类型：function object</p>
+<h5 id="1，数字-number"><a href="#1，数字-number" class="headerlink" title="1，数字 number"></a>1，数字 number</h5><p>整数，小数（浮点数），NaN（not a number）；<br>将其他类型转换成数字类型：<code>Number();</code></p>
+<p>强制转换：<br><code>parseInt();</code>整数<br><code>parseFloat();</code>小数<br>返回值只有两种：数字或者NaN</p>
+<p>隐式转换：将数组转换成数字类型时，先进行toString（）方法，将数组转换成string类型，然后再转换成数字类型<br>true=1，false=0，null=0，undefined=NaN</p>
+<p><code>isNaN();</code>返回值是false代表是数字，返回值是true代表不是数字<br><code>parseFloat();</code>小数</p>
+<h5 id="2，字符串-string"><a href="#2，字符串-string" class="headerlink" title="2，字符串 string"></a>2，字符串 string</h5><p>加引号的<br>将其他类型转换成字符串类型：<code>String();</code></p>
+<h5 id="3，布尔-boolean：-false（假）-true（真）"><a href="#3，布尔-boolean：-false（假）-true（真）" class="headerlink" title="3，布尔 boolean： false（假） true（真）"></a>3，布尔 boolean： false（假） true（真）</h5><p>将其他类型转换成字符串类型：<code>Boolean();</code><br>在js中除了 <code>0、“ ”、null、undefined、NaN</code>其余都是真，<code>[]</code>空数组会先转成字符串<code>“”</code>再转成布尔类型false，<code>{}</code>空对象转成字符串是<code>“[object Object]”</code></p>
+<p><code>！</code>表示取反，非<br>机制：先将后面的值调用Boolean()方法转为布尔类型后取反 返回值true 或者false </p>
+<h5 id="4，空（空对象指针）-null"><a href="#4，空（空对象指针）-null" class="headerlink" title="4，空（空对象指针） null"></a>4，空（空对象指针） null</h5><h5 id="5，未定义-undefined"><a href="#5，未定义-undefined" class="headerlink" title="5，未定义 undefined"></a>5，未定义 undefined</h5><p><strong>null和undefined的区别：</strong><br>两个在js中都表示“无”；null表示“没有对象”，预留位置，之后再添加；undefined是本应该有值，但是却没有。</p>
+<h5 id="6，检测数据类型-typeof"><a href="#6，检测数据类型-typeof" class="headerlink" title="6，检测数据类型 typeof"></a>6，检测数据类型 typeof</h5><p>null的数据类型是object</p>
+<p>####六，操作符<br>一个<code>=</code>号 ：赋值<br>两个<code>==</code>号：比较值<br>三个<code>===</code>号：全等，先比较类型，再比较值<br><strong>NaN不等于任何值，包括它本身</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">null==undefined //true</div><div class="line">null===undefined //false</div><div class="line">1==true //true</div><div class="line">1===true //false</div><div class="line">NaN==NaN //false</div></pre></td></tr></table></figure></p>
+<p>1.算数运算符<br><img src="./算数运算符.png" alt="Alt text"><br>运算优先级：++写在前面，先自增再赋值，++写在后面，先赋值再自增<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var num = 1;</div><div class="line">var num1=num++;//运算优先级，根据加号的位置判断先赋值还是先自增</div><div class="line">num++;//再原来的基础上加1，等同于num=num+1</div></pre></td></tr></table></figure></p>
+<p>2.赋值运算符<br><img src="./赋值运算符.png" alt="Alt text"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">var num = 3;</div><div class="line">num += 10;//等同于num=num+10</div><div class="line">num -= 10;//等同于num=num-10</div><div class="line">num *= 10;//等同于num=num*10</div><div class="line">num /= 10;</div><div class="line">num %= 10;//等同于num=num/10取余</div></pre></td></tr></table></figure></p>
+<p>3.比较和逻辑运算符<br><img src="./比较运算符.png" alt="Alt text"><br><img src="./逻辑运算符.png" alt="Alt text"><br><strong><code>!==</code>不全等于</strong><br><code>&amp;&amp;</code>：先看第一个数是真还是假，如果是真，直接返回第二个值，如果是假，直接返回第一个值<br><code>||</code>：先看第一个数是真还是假，如果是真，直接返回第一个值，如果是假，直接返回第二个值<br>4.条件运算符（三目运算符）<br>语法：表达式1（条件）？表达式2（条件成立时执行）：表达式3（条件不成立时执行）<br>```<br>var s=50;</p>
+
+            <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2017年09月14日 16:37</p>
+        <p>原始链接： <a class="post-url" href="/2017/09/14/JS-1-JavaScript基础/" title="JS-1.JavaScript基础">http://yinggirl93.github.io/2017/09/14/JS-1-JavaScript基础/</a></p>
+        <footer>
+            <a href="http://yinggirl93.github.io">
+                <img src="/images/logo.png" alt="Ying">
+                Ying
+            </a>
+        </footer>
+    </div>
+</div>
+
+      
+    </div>
+    <footer class="article-footer">
+        
+        
+<div class="post-share">
+    <a href="javascript:;" id="share-sub" class="post-share-fab">
+        <i class="fa fa-share-alt"></i>
+    </a>
+    <div class="post-share-list" id="share-list">
+        <ul class="share-icons">
+          <li>
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yinggirl93.github.io/2017/09/14/JS-1-JavaScript基础/&title=《JS-1.JavaScript基础》 — MyBlog&pic=http://yinggirl93.github.ioimages/logo.png" data-title="微博">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="weixin share-sns" id="wxFab" href="javascript:;" data-title="微信">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yinggirl93.github.io/2017/09/14/JS-1-JavaScript基础/&title=《JS-1.JavaScript基础》 — MyBlog&source=" data-title="QQ">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yinggirl93.github.io/2017/09/14/JS-1-JavaScript基础/" data-title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《JS-1.JavaScript基础》 — MyBlog&url=http://yinggirl93.github.io/2017/09/14/JS-1-JavaScript基础/&via=http://yinggirl93.github.io" data-title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yinggirl93.github.io/2017/09/14/JS-1-JavaScript基础/" data-title="Google+">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+     </div>
+</div>
+<div class="post-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" id="wxShare-close">×</a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://yinggirl93.github.io/2017/09/14/JS-1-JavaScript基础/" alt="微信分享二维码">
+</div>
+
+<div class="mask"></div>
+
+        
+        <ul class="article-footer-menu">
+            
+            
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/javascript/" class="color1">javascript</a>
+      
+    <a href="/tags/前端/" class="color3">前端</a>
+      
+  </li>
+
+        </ul>
+        
+    </footer>
+  </div>
+</article>
+
+
+    <aside class="post-toc-pos post-toc-top" id="post-toc">
+        <nav class="post-toc-wrap">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#一，什么是JavaScript以及组成"><span class="post-toc-text">一，什么是JavaScript以及组成</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#1-概念"><span class="post-toc-text">1.概念</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#2-JavaScript的组成"><span class="post-toc-text">2.JavaScript的组成</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#二，JavaScript的引入方式"><span class="post-toc-text">二，JavaScript的引入方式</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#1，行内式：直接将js代码写在标签内部"><span class="post-toc-text">1，行内式：直接将js代码写在标签内部</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#2-内部式：使用script标签，直接写在HTML文档中"><span class="post-toc-text">2,内部式：使用script标签，直接写在HTML文档中</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#3，外部式：外部引入一个js文件"><span class="post-toc-text">3，外部式：外部引入一个js文件</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#三，JavaScript的输出方式"><span class="post-toc-text">三，JavaScript的输出方式</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#1，document-write-；"><span class="post-toc-text">1，document.write()；</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#2，console（控制台输出）-可以直接在浏览器的控制台输入代码"><span class="post-toc-text">2，console（控制台输出）(可以直接在浏览器的控制台输入代码)</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#3，alert-弹出一个带有一条指定信息的消息（警示框）"><span class="post-toc-text">3，alert();弹出一个带有一条指定信息的消息（警示框）</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#4，innerHTML-innerText-获取或者向指定元素内添加内容-innerHTML是可以识别标签"><span class="post-toc-text">4，innerHTML/innerText 获取或者向指定元素内添加内容 (innerHTML是可以识别标签)</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#四，JavaScript的命名规则"><span class="post-toc-text">四，JavaScript的命名规则</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#五，变量"><span class="post-toc-text">五，变量</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#六，JavaScript的五种基础数据类型"><span class="post-toc-text">六，JavaScript的五种基础数据类型</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#1，数字-number"><span class="post-toc-text">1，数字 number</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#2，字符串-string"><span class="post-toc-text">2，字符串 string</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#3，布尔-boolean：-false（假）-true（真）"><span class="post-toc-text">3，布尔 boolean： false（假） true（真）</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#4，空（空对象指针）-null"><span class="post-toc-text">4，空（空对象指针） null</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#5，未定义-undefined"><span class="post-toc-text">5，未定义 undefined</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#6，检测数据类型-typeof"><span class="post-toc-text">6，检测数据类型 typeof</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+    
+
+<nav id="article-nav">
+  
+  
+    <a href="/2017/08/01/about/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">MiHo-主题安装和配置详情</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
+  
+</nav>
+
+
+
+    
+        <div id="SOHUCS" sid="JS-1-JavaScript基础" ></div>
+<script type="text/javascript">
+    (function(){
+        var appid = 'true';
+        var conf = 'true';
+        var width = window.innerWidth || document.documentElement.clientWidth;
+        if (width < 960) {
+            window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+    
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2017 Ying<br>
+      </p>
+    </div>
+  </div>
+</footer>
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "http://yinggirl93.github.io",
+      animate: true,
+      isHome: false,
+      share: true
+  }
+</script>
+<div class="sidebar">
+    <div id="sidebar-search" title="Search">
+        <i class="fa fa-search"></i>
+    </div>
+    <div id="sidebar-category" title="Categories">
+        <i class="fa fa-book"></i>
+    </div>
+    <div id="sidebar-tag" title="Tags">
+        <i class="fa fa-tags"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            <a class="category-link" href="/categories/JavaScript/">JavaScript</a><a class="category-link" href="/categories/开源项目/">开源项目</a>
+        </div>
+        <div id="sidebar-menu-box-tags">
+            <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/博客/" style="font-size: 20px;">博客</a> <a href="/tags/开源项目/" style="font-size: 20px;">开源项目</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div id="mobile-header-menu-container">
+        <span class="title">Menu</span>
+        <ul class="mobile-header-menu-navbar">
+            
+            <li>
+                <a  href="/">
+                    <i class="fa fa-home"></i><span>首页</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/archives">
+                    <i class="fa fa-archive"></i><span>Archives</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/about">
+                    <i class="fa fa-user"></i><span>About</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
+
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+<script src="/js/search.js"></script>
+<script src="/js/main.js"></script>
+
+
+  <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
+  <script src="/js/particles.js"></script>
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
+  <script src="/js/animate.js"></script>
+
+  </div>
+</body>
+</html>
